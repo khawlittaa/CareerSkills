@@ -15,7 +15,7 @@ class SkillsUtils{
     func parseSkillFromJson(jsonData: [String: AnyObject]) -> Skill?{
         
         //Required fileds
-        print ("parsing my Skill ")
+       // print ("parsing my Skill ")
         guard let id = jsonData["skill_uuid"] as? String,let name = jsonData["skill_name"] as? String, let type = jsonData["skill_type"] as? String, let description = jsonData["description"] as? String else{
             return nil
         }

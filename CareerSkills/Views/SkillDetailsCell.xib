@@ -26,13 +26,13 @@
                                     <constraint firstAttribute="height" constant="40" id="Hkl-Tw-CjX"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="skill name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1v-Zf-weg">
-                                <rect key="frame" x="49.5" y="60" width="86" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="skill name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1v-Zf-weg">
+                                <rect key="frame" x="5" y="60" width="175" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.6470588235294118" green="0.058823529411764705" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTC-p8-bR7">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTC-p8-bR7">
                                 <rect key="frame" x="10" y="92" width="165" height="133"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">knowledge of media production, communication, and dissemination techniques and methods. this includes alternative ways to inform and entertain via written, oral, and visual media.</string>
@@ -51,6 +51,7 @@
                             <constraint firstAttribute="trailing" secondItem="FTC-p8-bR7" secondAttribute="trailing" constant="10" id="m5k-IW-fwn"/>
                             <constraint firstItem="FTC-p8-bR7" firstAttribute="top" secondItem="u1v-Zf-weg" secondAttribute="bottom" constant="8" id="r4V-gw-C9f"/>
                             <constraint firstItem="CdF-Ae-TL2" firstAttribute="top" secondItem="6VT-32-t0y" secondAttribute="top" constant="10" id="xSa-iw-Oz1"/>
+                            <constraint firstItem="u1v-Zf-weg" firstAttribute="leading" secondItem="6VT-32-t0y" secondAttribute="leading" constant="5" id="zX3-Xd-agg"/>
                         </constraints>
                     </view>
                 </subviews>

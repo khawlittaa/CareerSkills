@@ -17,7 +17,7 @@ class Skill {
     
     init(skillId: String, skillType: String, skillTitle:String, desc: String) {
         self.SkillID = skillId
-        self.SkillName = skillType
+        self.SkillName = skillTitle
         self.SkillType = skillType
         self.SkillDescription = desc
     }

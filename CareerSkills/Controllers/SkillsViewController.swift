@@ -35,6 +35,10 @@ class SkillsViewController: UIViewController {
                 self.allSkills = skills
                 self.skillsCollectionView.reloadData()
            })
+        
+        if let layout = skillsCollectionView.collectionViewLayout as? PinterestLayout{
+                   layout.delegate = self
+               }
     }
     
     func getSkillsFromInternet(onComplition: @escaping ([Skill]?)->()){
@@ -73,8 +77,10 @@ class SkillsViewController: UIViewController {
     
 }
 
-extension SkillsViewController: UICollectionViewDelegate{
-    
+extension SkillsViewController: PinterestLayoutDelegate{
+    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
+           return  200
+}
 }
 
 extension SkillsViewController: UICollectionViewDataSource{
@@ -86,6 +92,7 @@ extension SkillsViewController: UICollectionViewDataSource{
         let cell = skillsCollectionView.dequeueReusableCell(withReuseIdentifier: "SkillDetailsCell", for: indexPath) as! SkillDetailsCell
         cell.SkillDescText.text = allSkills[indexPath.row].SkillDescription
         cell.SkillTitleLbl.text = allSkills[indexPath.row].SkillName
+        cell.SkillTypeImg.image = UIImage(named: allSkills[indexPath.row].SkillType)
                return cell
     }
     

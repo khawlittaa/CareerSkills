@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8432212523AD330300A4475E /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432212423AD330300A4475E /* PinterestLayout.swift */; };
 		84E6522923AC011B00E3342F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E6522823AC011B00E3342F /* AppDelegate.swift */; };
 		84E6522B23AC011B00E3342F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E6522A23AC011B00E3342F /* SceneDelegate.swift */; };
 		84E6522D23AC011B00E3342F /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E6522C23AC011B00E3342F /* JobsViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		049A6A6944D3F197C231DCA7 /* Pods_CareerSkills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareerSkills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8432212423AD330300A4475E /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		84E6522523AC011B00E3342F /* CareerSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareerSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E6522823AC011B00E3342F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E6522A23AC011B00E3342F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				84E6523E23AC021C00E3342F /* Controllers */,
 				84E6523D23AC021200E3342F /* Views */,
+				8432212423AD330300A4475E /* PinterestLayout.swift */,
 				84E6523C23AC01F500E3342F /* Models */,
 				84E6522823AC011B00E3342F /* AppDelegate.swift */,
 				84E6522A23AC011B00E3342F /* SceneDelegate.swift */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8432212523AD330300A4475E /* PinterestLayout.swift in Sources */,
 				84E6522D23AC011B00E3342F /* JobsViewController.swift in Sources */,
 				84E6522923AC011B00E3342F /* AppDelegate.swift in Sources */,
 				84E6524E23AC032300E3342F /* Career.swift in Sources */,
