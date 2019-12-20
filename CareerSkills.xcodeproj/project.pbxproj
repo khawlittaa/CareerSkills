@@ -87,7 +87,6 @@
 			children = (
 				84E6523E23AC021C00E3342F /* Controllers */,
 				84E6523D23AC021200E3342F /* Views */,
-				8432212423AD330300A4475E /* PinterestLayout.swift */,
 				84E6523C23AC01F500E3342F /* Models */,
 				84E6522823AC011B00E3342F /* AppDelegate.swift */,
 				84E6522A23AC011B00E3342F /* SceneDelegate.swift */,
@@ -111,6 +110,7 @@
 		84E6523D23AC021200E3342F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8432212423AD330300A4475E /* PinterestLayout.swift */,
 				84E6524323AC02D500E3342F /* JobInfoCell.swift */,
 				84E6525123AC03E400E3342F /* SkillDetailsCell.swift */,
 				84E6524423AC02D500E3342F /* JobInfoCell.xib */,
