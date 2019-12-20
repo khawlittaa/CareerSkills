@@ -25,4 +25,8 @@ class JobInfoCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func SkillsBtnPressed(_ sender: Any) {
+        
+
+    }
 }

@@ -15,13 +15,13 @@ class JobsUtils{
     func parseCareerFromJson(jsonData: [String: AnyObject]) -> Career?{
         
         //Required fileds
-        print ("parsing my carrers ")
+       // print ("parsing my carrers ")
         guard let id = jsonData["uuid"] as? String,let name = jsonData["title"] as? String,
         let domainId = jsonData["parent_uuid"] as? String else{
             return nil
         }
         
-        let career = Career(jobId: id, jobDomainId: name, jobTitle: domainId)
+        let career = Career(jobId: id, jobDomainId: domainId, jobTitle: name)
         
         return career
     }

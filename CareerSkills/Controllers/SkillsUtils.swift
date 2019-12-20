@@ -16,7 +16,7 @@ class SkillsUtils{
         
         //Required fileds
         print ("parsing my Skill ")
-        guard let id = jsonData["skills"]?["skill_uuid"] as? String,let name = jsonData["skills"]?["skill_name"] as? String, let type = jsonData["skills"]?["skill_type"] as? String, let description = jsonData["skills"]?["description"] as? String else{
+        guard let id = jsonData["skill_uuid"] as? String,let name = jsonData["skill_name"] as? String, let type = jsonData["skill_type"] as? String, let description = jsonData["description"] as? String else{
             return nil
         }
         
