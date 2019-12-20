@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class Career {
+    
+    var  JobID: String = ""
+    var  JobDomainID: String = ""
+    var  JobTitle: String = ""
+    
+    init(jobId: String, jobDomainId: String, jobTitle:String) {
+        self.JobID = jobId
+        self.JobDomainID = jobDomainId
+        self.JobTitle = jobTitle
+    }
+}

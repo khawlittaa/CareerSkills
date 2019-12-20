@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class Skill {
+    
+    var  SkillID: String = ""
+    var  SkillName: String = ""
+    var  SkillType: String = ""
+    var  SkillDescription: String = ""
+    
+    init(skillId: String, skillType: String, skillTitle:String, desc: String) {
+        self.SkillID = skillId
+        self.SkillName = skillType
+        self.SkillType = skillType
+        self.SkillDescription = desc
+    }
+}

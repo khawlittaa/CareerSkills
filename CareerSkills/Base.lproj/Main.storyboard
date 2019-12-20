@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +15,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Availabe Job List: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTc-h1-f2x">
+                                <rect key="frame" x="109" y="64" width="196.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" red="0.50588235290000005" green="0.1529411765" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pMw-Ir-Ueo">
+                                <rect key="frame" x="0.0" y="113" width="414" height="749"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pMw-Ir-Ueo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P84-y0-NS7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pMw-Ir-Ueo" secondAttribute="bottom" id="Qez-wP-ppF"/>
+                            <constraint firstItem="dTc-h1-f2x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Yrk-wd-j0r"/>
+                            <constraint firstItem="pMw-Ir-Ueo" firstAttribute="top" secondItem="dTc-h1-f2x" secondAttribute="bottom" constant="20" id="aWL-rt-ed9"/>
+                            <constraint firstItem="dTc-h1-f2x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t2u-sh-fGH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pMw-Ir-Ueo" secondAttribute="trailing" id="uis-gQ-58w"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,20 +43,56 @@
             </objects>
             <point key="canvasLocation" x="-67" y="122"/>
         </scene>
-        <!--View Controller-->
+        <!--Skills View Controller-->
         <scene sceneID="xhp-xk-Cw2">
             <objects>
-                <viewController id="Vxs-5l-g33" sceneMemberID="viewController">
+                <viewController id="Vxs-5l-g33" customClass="SkillsViewController" customModule="CareerSkills" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EGx-1D-Tja">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFL-aZ-k5I">
+                                <rect key="frame" x="152" y="64" width="110.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" red="0.50588235290000005" green="0.1529411765" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="paa-Vx-xX6">
+                                <rect key="frame" x="0.0" y="113" width="414" height="749"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tUp-04-xHG">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="r5h-Rf-ClH">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="m8c-Pn-wsL">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yFL-aZ-k5I" firstAttribute="centerX" secondItem="EGx-1D-Tja" secondAttribute="centerX" id="A7o-Vl-CRY"/>
+                            <constraint firstItem="bMr-Uh-9fl" firstAttribute="trailing" secondItem="paa-Vx-xX6" secondAttribute="trailing" id="Ahe-tX-eEh"/>
+                            <constraint firstItem="yFL-aZ-k5I" firstAttribute="top" secondItem="bMr-Uh-9fl" secondAttribute="top" constant="20" id="Gux-Ca-1WT"/>
+                            <constraint firstItem="paa-Vx-xX6" firstAttribute="leading" secondItem="bMr-Uh-9fl" secondAttribute="leading" id="PJR-eq-VPC"/>
+                            <constraint firstItem="bMr-Uh-9fl" firstAttribute="bottom" secondItem="paa-Vx-xX6" secondAttribute="bottom" id="j55-ye-DFL"/>
+                            <constraint firstItem="paa-Vx-xX6" firstAttribute="top" secondItem="yFL-aZ-k5I" secondAttribute="bottom" constant="20" id="xLU-aD-XzT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bMr-Uh-9fl"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyP-cM-vQC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783" y="122"/>
+            <point key="canvasLocation" x="782.60869565217399" y="121.875"/>
         </scene>
     </scenes>
 </document>
