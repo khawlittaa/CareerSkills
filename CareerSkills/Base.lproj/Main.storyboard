@@ -74,8 +74,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFL-aZ-k5I">
-                                <rect key="frame" x="152" y="64" width="110.5" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFL-aZ-k5I">
+                                <rect key="frame" x="10" y="64" width="394" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <color key="textColor" red="0.50588235290000005" green="0.1529411765" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -95,6 +95,7 @@
                         <constraints>
                             <constraint firstItem="yFL-aZ-k5I" firstAttribute="centerX" secondItem="EGx-1D-Tja" secondAttribute="centerX" id="A7o-Vl-CRY"/>
                             <constraint firstItem="bMr-Uh-9fl" firstAttribute="trailing" secondItem="paa-Vx-xX6" secondAttribute="trailing" id="Ahe-tX-eEh"/>
+                            <constraint firstItem="yFL-aZ-k5I" firstAttribute="leading" secondItem="bMr-Uh-9fl" secondAttribute="leading" constant="10" id="CUe-rP-mfp"/>
                             <constraint firstItem="yFL-aZ-k5I" firstAttribute="top" secondItem="bMr-Uh-9fl" secondAttribute="top" constant="20" id="Gux-Ca-1WT"/>
                             <constraint firstItem="paa-Vx-xX6" firstAttribute="leading" secondItem="bMr-Uh-9fl" secondAttribute="leading" id="PJR-eq-VPC"/>
                             <constraint firstItem="bMr-Uh-9fl" firstAttribute="bottom" secondItem="paa-Vx-xX6" secondAttribute="bottom" id="j55-ye-DFL"/>

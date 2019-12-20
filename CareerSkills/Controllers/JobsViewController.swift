@@ -63,9 +63,18 @@ class JobsViewController: UIViewController {
             }
             
             onComplition(allJobs)
-        default:
-            onComplition(nil)
-            return
+            case 500:
+                        let alert = UIAlertController(title: "Ereur", message: " Serveur Problem . plz try again Later!", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default))
+                        self.present(alert, animated: true)
+                        
+                    default:
+                        let alert = UIAlertController(title: "Erreur", message: "Problème Serveur! Veuillez réessayer plus tard.", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default))
+                        self.present(alert, animated: true)
+                        onComplition(nil)
+                        return
+
         }
       }
     }
